@@ -1,5 +1,4 @@
 import Icons from '../Icons/Icons';
-import { NavLink } from 'react-router-dom';
 import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import './ContactForm.scss'
