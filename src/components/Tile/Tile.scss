@@ -3,13 +3,10 @@
 
 // Usamos mobile first para definir primero los estilos de celulares y samos min-width en las media queries
 .cmp-tile {
-    
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         // @include respond-to('medium') {}
-
-
     .cmp-tile-media {
         @include respond-to('medium') {
             width: 30%;
@@ -33,4 +30,12 @@
             width: 70%;
         }
     }
+}
+.profile-picture{
+    border-radius: 500px;
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    object-position:unset;
+    box-shadow: 5px 13px 10px rgba(0, 0, 0, 0.591);
 }
