@@ -16,13 +16,13 @@ export default function Home() {
   const handlerLang = () => {
     setLang(lang === 'es' ? 'en' : 'es')
   }
-  
+
   return (
     <div className="App">
       <Wrapper mode={mode}>
         <TopNav handlerMode={handlerMode} handlerLang={handlerLang} mode={mode} lang={lang} />
-        <Hero />
-        <Main lang={lang}/>
+        <Hero lang={lang} />
+        <Main lang={lang} />
         <ContactForm mode={mode} />
       </Wrapper>
     </div>

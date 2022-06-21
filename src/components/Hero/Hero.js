@@ -2,10 +2,12 @@
 import "./Hero.scss";
 import { TagCloud } from 'react-tagcloud'
 import AutoTyping from '../AutoTyping/AutoTyping';
-const Hero = () => {
+import traducciones from '../../traducciones/traducciones'
+const Hero = ({lang}) => {
   const isMobile = () => window.outerWidth < 1024
   const contenido2 = "Full Stack Developer."
   const contenido1 = "Martin Barreiro"
+  
 
   const data = [
     // { value: 'MongoDb', count: 10 },
@@ -37,7 +39,7 @@ const Hero = () => {
       <div className="cmp-hero-content">
         <div className="cmp-hero-content__wrapper">
           <h1>
-            <span className="cmp-hero-content__line-1">Hi, my name is:</span>
+            <span className="cmp-hero-content__line-1">{traducciones[lang].hero}</span>
             <AutoTyping contenido={contenido1} />
             {/* <span className="cmp-hero-content__line-2">Martin Barreiro</span> */}
           </h1>
