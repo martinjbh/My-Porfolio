@@ -1,4 +1,4 @@
-import Icons from "../Icons/Icons";
+
 import "./Toggle.scss";
 
 export default function Toggle({ side, label, handler }) {

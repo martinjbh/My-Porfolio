@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 const AutoTyping = ({contenido}) => {
     useEffect(() => {
         typing()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     const [msg, setMsg] = useState('');
     const fullMsg = contenido;

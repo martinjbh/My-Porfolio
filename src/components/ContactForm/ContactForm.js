@@ -134,17 +134,17 @@ const ContactForm = ({ mode }) => {
                     }
                 </form>
                 <div className="cmp-contact-form--social">
-                    <a href="mailto:barreiromartinj@gmail.com" className="cmp-contact-form--social__link" target="_blank">
+                    <a href="mailto:barreiromartinj@gmail.com" className="cmp-contact-form--social__link" target="_blank"  rel="noreferrer">
                         <Icons name="mail" />
                     </a>
-                    <a href="https://github.com/martinjbh" className="cmp-contact-form--social__link" target="_blank">
+                    <a href="https://github.com/martinjbh" className="cmp-contact-form--social__link" target="_blank"  rel="noreferrer">
                         <Icons name="git" />
                     </a>
-                    <a href="https://www.linkedin.com/in/barreiro-martin/" className="cmp-contact-form--social__link" target="_blank">
+                    <a href="https://www.linkedin.com/in/barreiro-martin/" className="cmp-contact-form--social__link" target="_blank"  rel="noreferrer">
                         <Icons name="linkedin" />
                     </a>
                   
-                        <a  href='https://www.docdroid.net/6tLnXhN/martin-barreiro-cv-pdf' className="cmp-contact-form--social__link" target="_blank">
+                        <a  href='https://www.docdroid.net/6tLnXhN/martin-barreiro-cv-pdf' className="cmp-contact-form--social__link" target="_blank"  rel="noreferrer">
                             <Icons name="cv" />
 
                         </a>

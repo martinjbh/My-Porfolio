@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+
 import "./Hero.scss";
 import { TagCloud } from 'react-tagcloud'
 import AutoTyping from '../AutoTyping/AutoTyping';
