@@ -1,0 +1,65 @@
+@import '../../scss/breakpoints.scss';
+@import '../../scss/mixins.scss';
+
+.cmp-wrapper {
+
+    .cmp-wrapper__color-clip {
+        content: '';
+        background: linear-gradient(4deg, rgba(126, 110, 110, 0.6249533663974719) 0%, rgba(90, 76, 76, 0.8637174113412921) 12%, rgba(44, 44, 41, 0.1586612315660112) 54%, rgba(32, 32, 30, 0.7766387596558989) 56%, rgba(0, 0, 0, 0.5968634787570224) 75%, rgba(191, 192, 169, 0.3019196585323034) 85%, rgba(68, 69, 55, 0.672706175386236) 95%);
+        left: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        clip-path: circle(4.2% at 46% 0);
+    }
+
+    .cmp-wrapper__color-clip:before,
+    .cmp-wrapper__color-clip:after,
+    &:before,
+    &:after {
+        content: '';
+        left: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: fixed;
+    }
+
+    &:before {
+        background: linear-gradient(4deg, rgba(126, 110, 110, 0.6249533663974719) 0%, rgba(90, 76, 76, 0.8637174113412921) 12%, rgba(44, 44, 41, 0.1586612315660112) 54%, rgba(32, 32, 30, 0.7766387596558989) 56%, rgba(0, 0, 0, 0.5968634787570224) 75%, rgba(191, 192, 169, 0.3019196585323034) 85%, rgba(68, 69, 55, 0.672706175386236) 95%);
+        clip-path: circle(18.2% at 0 0);
+
+        @include respond-to('medium') {
+            clip-path: circle(12.2% at 0 0);
+        }
+    }
+
+    &:after {
+        // background: linear-gradient(4deg, rgba(126, 110, 110, 0.6249533663974719) 0%, rgba(7, 7, 7, 0.689) 12%, rgba(255, 255, 250, 0.159) 54%, rgba(32, 32, 30, 0.7766387596558989) 56%, rgba(0, 0, 0, 0.5968634787570224) 75%, rgba(191, 192, 169, 0.3019196585323034) 85%, rgba(68, 69, 55, 0.672706175386236) 95%);
+        clip-path: circle(12.9% at 99% 100%)
+    }
+    @include respond-to('medium') {
+        &:after {
+            background: linear-gradient(4deg, rgba(126, 110, 110, 0.6249533663974719) 0%, rgba(7, 7, 7, 0.689) 12%, rgba(255, 255, 250, 0.159) 54%, rgba(32, 32, 30, 0.7766387596558989) 56%, rgba(0, 0, 0, 0.5968634787570224) 75%, rgba(191, 192, 169, 0.3019196585323034) 85%, rgba(68, 69, 55, 0.672706175386236) 95%);
+            clip-path: circle(12.9% at 99% 100%)
+        }
+    }
+    &.cmp-wrapper__mode-dark {
+        color: #fff;
+
+        background-color: rgb(49, 47, 47);
+
+        .cmp-icon path {
+            fill: #fff;
+        }
+    }
+
+    &.cmp-wrapper__mode-light {
+        color: #000;
+        background-color: rgb(255, 255, 255);
+    }
+}

@@ -1,0 +1,36 @@
+@import '../../scss/breakpoints.scss';
+@import '../../scss/mixins.scss';
+
+// Usamos mobile first para definir primero los estilos de celulares y samos min-width en las media queries
+.cmp-tile {
+    
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        // @include respond-to('medium') {}
+
+
+    .cmp-tile-media {
+        @include respond-to('medium') {
+            width: 30%;
+        }
+    }
+
+    .cmp-tile-content__title {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+    }
+    
+    .cmp-tile-content__text {
+        font-size: 2em;
+        // margin-bottom: 20px;
+    }
+    
+    .cmp-tile-content {
+        order: 2;
+        @include respond-to('medium') {
+            order: initial;
+            width: 70%;
+        }
+    }
+}

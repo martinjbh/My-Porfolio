@@ -1,0 +1,47 @@
+@import '../../scss/breakpoints.scss';
+@import '../../scss/mixins.scss';
+
+
+.cmp-toggle {
+  padding-top: 10px;
+  top: 20px;
+
+  button {
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+    img {
+      width: 50px;
+    }
+  }
+
+  
+  &.left {
+    position: absolute;
+    left: 20px;
+  }
+
+  &.right {
+    position: absolute;
+    right: 20px;
+  }
+
+
+
+  @include respond-to('medium') {
+    &.left {
+      position: fixed;
+      left: 20px;
+    }
+  
+    &.right {
+      position: fixed;
+      right: 20px;
+    }
+  }
+}
+
+
+
+

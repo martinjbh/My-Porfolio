@@ -1,0 +1,82 @@
+@import '../../scss/breakpoints.scss';
+@import '../../scss/mixins.scss';
+
+.cmp-hero{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 50px);
+  
+  @include respond-to('medium-landscape') {
+    margin-top: -50px;
+   
+  }
+
+  .cmp-hero-content__wrapper,
+  .cmp-hero-media__wrapper {
+    @include respond-to('medium') {
+      position: relative;
+      top: 50%;
+      text-align: center;
+      transform: translateY(-50%);
+    }
+  }
+  .cmp-hero-media,
+  .cmp-hero-content {
+    width: 80%;
+    margin: auto;
+    @include respond-to('medium') {
+      margin: 0;
+      width: 50%; 
+    }
+  }
+
+  .cmp-hero-content {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    @include respond-to('medium-landscape') {
+      margin: 0;
+     font-size: 34px;
+     text-align: left;
+    } 
+  }
+
+  .cmp-hero-content__line-1 {
+    font-size: .7em;
+    position: relative;
+    @include respond-to('medium-landscape') {
+      left: -70px;
+    }
+  }
+
+  .cmp-hero-content__line-2 {
+    display: block;
+    position: relative;
+    font-weight: 300;
+    padding: 30px 0;
+    font-size: 1em;
+    @include respond-to('medium-landscape') {
+      left: 40px;
+    }
+  }
+
+  .tag-cloud {
+    text-align: center;
+  }
+
+  .cmp-hero__custom-tag {
+    margin: 8px;
+    padding: 9px;
+    display: inline-block;
+    border-radius: 15px;
+    transition: all 1s;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.2);
+    cursor:default
+  }
+  
+  .cmp-hero-media__wrapper {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+}
