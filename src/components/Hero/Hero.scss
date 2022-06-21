@@ -5,9 +5,10 @@
   display: flex;
   flex-wrap: wrap;
   min-height: calc(100vh - 50px);
-  
+  margin-bottom: 63px;
   @include respond-to('medium-landscape') {
     margin-top: -50px;
+    margin-bottom: 63px;
    
   }
 
