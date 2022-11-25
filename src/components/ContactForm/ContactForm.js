@@ -2,7 +2,6 @@ import Icons from '../Icons/Icons';
 import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import './ContactForm.scss'
-import gitlab from '../Icons/gitlab.png'
 const ContactForm = ({ mode }) => {
 
     const [error, setError] = useState({
