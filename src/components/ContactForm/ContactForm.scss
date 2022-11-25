@@ -37,10 +37,18 @@
         text-decoration: none;
         display: inline-block;
         position: relative;
+        bottom: 20px;
+
+        &:hover {
+            fill: #fa3;
+        }
 
         @include respond-to('medium') {
+            position: relative;
             display: block;
-            left: 5px;
+            left: 8px;
+            margin-top: 18px;
+
         }
     }
 
