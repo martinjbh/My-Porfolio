@@ -2,6 +2,7 @@ import Icons from '../Icons/Icons';
 import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import './ContactForm.scss'
+import gitlab from '../Icons/gitlab.png'
 const ContactForm = ({ mode }) => {
 
     const [error, setError] = useState({
@@ -133,21 +134,26 @@ const ContactForm = ({ mode }) => {
                     }
                 </form>
                 <div className="cmp-contact-form--social">
-                    <a href="mailto:barreiromartinj@gmail.com" className="cmp-contact-form--social__link" target="_blank"  rel="noreferrer">
+                    <a href="mailto:barreiromartinj@gmail.com" className="cmp-contact-form--social__link" target="_blank" rel="noreferrer">
                         <Icons name="mail" />
                     </a>
-                    <a href="https://github.com/martinjbh" className="cmp-contact-form--social__link" target="_blank"  rel="noreferrer">
+                    <a href="https://github.com/martinjbh" className="cmp-contact-form--social__link" target="_blank" rel="noreferrer">
                         <Icons name="git" />
                     </a>
-                    <a href="https://www.linkedin.com/in/barreiro-martin/" className="cmp-contact-form--social__link" target="_blank"  rel="noreferrer">
+                    <a href='https://gitlab.com/martinjhb' className="cmp-contact-form--gitlab" target="_blank" rel="noreferrer">
+                        <Icons name="gitlab" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/barreiro-martin/" className="cmp-contact-form--social__link" target="_blank" rel="noreferrer">
                         <Icons name="linkedin" />
                     </a>
-                  
-                        <a  href='https://www.docdroid.net/6tLnXhN/martin-barreiro-cv-pdf' className="cmp-contact-form--social__link" target="_blank"  rel="noreferrer">
-                            <Icons name="cv" />
 
-                        </a>
-                   
+                    <a href='https://www.docdroid.net/6tLnXhN/martin-barreiro-cv-pdf' className="cmp-contact-form--social__link" target="_blank" rel="noreferrer">
+                        <Icons name="cv" />
+
+                    </a>
+
+
+
 
                 </div>
             </div>

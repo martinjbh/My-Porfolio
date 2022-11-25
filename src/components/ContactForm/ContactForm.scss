@@ -32,6 +32,18 @@
         }
     }
 
+
+    .cmp-contact-form--gitlab {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+
+        @include respond-to('medium') {
+            display: block;
+            left: 5px;
+        }
+    }
+
     .cmp-icon {
         display: inline-block;
         margin-bottom: 20px;
@@ -73,11 +85,21 @@
 
     .cmp-contact-form--social {
         margin-top: 20px;
+        width: 342px;
+        position: relative;
+
+        @include respond-to('small') {
+            right: 25px;
+
+        }
 
         @include respond-to('medium') {
             margin-top: 50px;
             margin-left: 100px;
+
         }
+
+
     }
 
     .cmp-contact-form--row {
