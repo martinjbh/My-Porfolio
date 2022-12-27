@@ -31,14 +31,10 @@
             display: block;
         }
     }
-
-
     .cmp-contact-form--gitlab {
         text-decoration: none;
         display: inline-block;
         position: relative;
-
-
         @include respond-to('medium') {
             position: relative;
             display: block;
@@ -47,7 +43,6 @@
 
         }
     }
-
     .cmp-icon {
         display: inline-block;
         margin-bottom: 20px;
