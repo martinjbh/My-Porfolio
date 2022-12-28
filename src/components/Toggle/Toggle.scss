@@ -11,12 +11,13 @@
     appearance: none;
     cursor: pointer;
     background-color: transparent;
+
     img {
       width: 50px;
     }
   }
 
-  
+
   &.left {
     position: absolute;
     left: 20px;
@@ -25,6 +26,7 @@
   &.right {
     position: absolute;
     right: 20px;
+
   }
 
 
@@ -34,14 +36,10 @@
       position: fixed;
       left: 20px;
     }
-  
+
     &.right {
       position: fixed;
       right: 20px;
     }
   }
 }
-
-
-
-
