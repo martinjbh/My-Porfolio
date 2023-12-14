@@ -139,7 +139,7 @@ const ContactForm = ({ mode }) => {
                     <a href="https://github.com/martinjbh" className="cmp-contact-form--social__link" target="_blank" rel="noreferrer">
                         <Icons name="git" />
                     </a>
-                    <a href='https://gitlab.com/martinjhb' className="cmp-contact-form--gitlab" target="_blank" rel="noreferrer">
+                    <a href='https://gitlab.powermeter.com.ar/barreiromartinj' className="cmp-contact-form--gitlab" target="_blank" rel="noreferrer">
                         <Icons name="gitlab" />
                     </a>
                     <a href="https://www.linkedin.com/in/barreiro-martin/" className="cmp-contact-form--social__link" target="_blank" rel="noreferrer">
