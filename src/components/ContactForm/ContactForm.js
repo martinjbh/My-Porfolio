@@ -146,7 +146,7 @@ const ContactForm = ({ mode }) => {
                         <Icons name="linkedin" />
                     </a>
 
-                    <a href='https://www.docdroid.net/6tLnXhN/martin-barreiro-cv-pdf' className="cmp-contact-form--social__link" target="_blank" rel="noreferrer">
+                    <a href='https://www.docdroid.net/A6N6F3R/martin-barreiro-cv-pdf' className="cmp-contact-form--social__link" target="_blank" rel="noreferrer">
                         <Icons name="cv" />
 
                     </a>
